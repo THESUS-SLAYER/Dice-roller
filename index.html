@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="Header">Random Dice Roller</h1>
+        <img src="img/dice-cube.png" alt="dice" id="dice">
+        <div class="btn-grp">
+            <button class="btn" onclick="resetdice(1)">Reset</button>
+            <button class="btn1" onclick="rolldice()">Throw</button>
+        </div>
+    </div>
+    <script>
+        function rolldice() {
+        const min = 1;
+        const max = 6;
+
+        const randomno = Math.round(Math.random() * (max-min) + min);
+
+        const diceimg = document.getElementById('dice');
+
+        if(randomno == 1)
+        {
+        diceimg.src = "img/dice1.png"
+        }
+        else if (randomno == 2)
+        {
+        diceimg.src = "img/dice2.png"
+        }
+        else if (randomno == 3)
+        {
+        diceimg.src = "img/dice3.png"
+        }
+        else if (randomno == 4)
+        {
+        diceimg.src = "img/dice4.png"
+        }
+        else if (randomno == 5)
+        {
+        diceimg.src = "img/dice5.png"
+        }
+        else if (randomno == 6)
+        {
+        diceimg.src = "img/dice6.png"
+        }
+    }
+    
+        function resetdice(num) {
+            if (num == 1) 
+            {
+            const diceimg = document.getElementById('dice');
+            diceimg.src = "img/dice-cube.png"    
+            }
+            
+        }
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.container
+{
+    width: 400px;
+    background-color: rgb(215, 222, 222);
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+#dice
+{
+    display: block;
+    margin: 20px auto;
+    height: 150px;
+    width: 150px;
+}
+
+.btn-grp
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn
+{
+    border: solid 1px black;
+    border-radius: 20px;
+    height: 35px;
+    width: 90px;
+    font-size: 20px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+}
+.btn1
+{
+    border: solid 1px black;
+    background-color: rgb(137, 246, 252);
+    border-radius: 20px;
+    height: 35px;
+    width: 90px;
+    font-size: 20px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+}
+
+#Header
+{
+    font-size: 40px;
+    text-align: center;
+}
